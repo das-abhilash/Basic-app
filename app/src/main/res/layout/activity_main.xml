@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#00897b">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="My NanoDegree Apps"
+        android:id="@+id/text_app"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spotify Streamer"
+        android:id="@+id/spotify_button"
+        android:layout_below="@+id/text_app"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:background="#1976d2"
+        android:onClick="Click_Spotify" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scores App"
+        android:id="@+id/Scores_button"
+        android:layout_below="@+id/spotify_button"
+        android:layout_alignLeft="@+id/spotify_button"
+        android:layout_alignStart="@+id/spotify_button"
+        android:layout_alignRight="@+id/spotify_button"
+        android:layout_alignEnd="@+id/spotify_button"
+        android:layout_marginTop="10dp"
+        android:background="#1976d2"
+        android:onClick="Click_Scores" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Library App"
+        android:id="@+id/Library_button"
+        android:layout_below="@+id/Scores_button"
+        android:layout_alignRight="@+id/Scores_button"
+        android:layout_alignEnd="@+id/Scores_button"
+        android:layout_alignLeft="@+id/Scores_button"
+        android:layout_alignStart="@+id/Scores_button"
+        android:layout_marginTop="10dp"
+        android:background="#1976d2"
+        android:onClick="Click_Library" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Build it Bigger"
+        android:id="@+id/Build_button"
+        android:layout_below="@+id/Library_button"
+        android:layout_alignLeft="@+id/Library_button"
+        android:layout_alignStart="@+id/Library_button"
+        android:layout_alignRight="@+id/Library_button"
+        android:layout_alignEnd="@+id/Library_button"
+        android:layout_marginTop="10dp"
+        android:background="#1976d2"
+        android:onClick="Click_Build" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XYZ Reader"
+        android:id="@+id/XYZ_button"
+        android:layout_below="@+id/Build_button"
+        android:layout_alignRight="@+id/Build_button"
+        android:layout_alignEnd="@+id/Build_button"
+        android:layout_alignLeft="@+id/Build_button"
+        android:layout_alignStart="@+id/Build_button"
+        android:layout_marginTop="10dp"
+        android:background="#1976d2"
+        android:onClick="Click_XYZ"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CAPSTONE: my own app"
+        android:id="@+id/CAPSTONE_button"
+        android:background="#ad1457"
+        android:layout_below="@+id/XYZ_button"
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@+id/XYZ_button"
+        android:layout_alignEnd="@+id/XYZ_button"
+        android:layout_alignStart="@+id/Build_button"
+        android:layout_alignLeft="@+id/Build_button"
+
+        android:onClick="Click_CAPSTONE" />
+
+    <!--android:layout_centerHorizontal="true" -->
+
+</RelativeLayout>
